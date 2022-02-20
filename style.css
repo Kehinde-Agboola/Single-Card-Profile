@@ -1,6 +1,6 @@
 
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 14px; text-align: center; 
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
@@ -42,22 +42,24 @@ section{
     overflow: hidden;
 
 
+
 }
 
 .card{
     background-color: white;
-    width: 350px;
+    width: 400px;
     border-radius: 20px;
     overflow: hidden;
     text-align: center;
     position: relative;
+    box-shadow: 10px  hsl(0, 11%, 12%) 
 }
 
 
 .card-header{
     background-image: url("./images/bg-pattern-card.svg");
     background-size: cover; 
-    height: 150px; 
+    height: 160px; 
 }
 .card-body{
     padding: 0 20px 25px;
@@ -122,24 +124,37 @@ section{
 
 .circles .c1, .c2{
     position: absolute;
+    /* animation: 2s forwards; */
+    /* opacity: 0; */
 }
 
 .circles .c1{
     top: -600px;
     left: -180px;
+    /* transform: translate(-100px, -50px); */
 }
-
+/* @keyframes circles{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+        transform: translate(0);
+    }
+} */
 
 .circles .c2{
-    bottom: -580px;
-    right: -200px;
+    bottom: -540px;
+    right: -270px;          
+    /* transform: translate(100px, -50px); */
 
 
 }
 
-@media only screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
     section {
       background-color: var(--Dark-cyan);
+      position:relative;
     }
     .card{
         width: 340px;
@@ -172,7 +187,7 @@ section{
     }
     
      .circles .c2{
-        bottom: -674px;
-        right: -692px;
+        bottom: -558px;
+        right: -673px;
     } 
 } 
